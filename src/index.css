@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen font-sans antialiased;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .fl-c {
+    @apply flex flex-col;
+  }
+  .fl-r {
+    @apply flex flex-row;
+  }
+  .jus-bet {
+    @apply justify-between;
+  }
+  .fl-between {
+    @apply flex justify-between;
+  }
+  .fl-center {
+    @apply flex justify-center items-center;
+  }
+  .fl-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .fl-row-center {
+    @apply flex flex-row justify-center items-center;
+  }
+}
